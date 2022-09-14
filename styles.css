@@ -1,19 +1,67 @@
-.usualInput{
-margin-top: 15px;
-border-radius: 5px;
-border-color: rgba(255, 0, 0, 0.732);
-border-style: dashed;
-background-color: lightgreen;
+.usualInput {
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 190px;
+
 }
-.culClassButton{
-padding: 10px;
-margin: 10px;
+
+.selectionClass {
+    height: 30px;
+    margin-top: 10px;
+    width: 65px;
+
 }
-.boxClass{
-width: 400px;
-height: 400px;
-background-color: lightgreen;
+
+.culClassButton {
+    height: 40px;
+    margin-top: 50px;
+    width: 160px;
+
+
 }
+
+.generalClass {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(240, 27, 27, 0.732);
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: rgba(240, 27, 27, 0.732);
+    border-style: dashed;
+    background-color: rgb(168, 237, 168);
+}
+
+.boxClass {
+    width: 500px;
+    height: 310px;
+    background-color: rgb(168, 237, 168);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.resultClass {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 13px;
+    width: 470px;
+    height: 90px;
+
+}
+
+.result1Class {
+    opacity: 0.3;
+    margin-left: 10px;
+}
+
+.result2Class {
+
+    margin-left: 10px;
+}
+
 @media (max-width:700px) {
     div>* {
         display: block;

@@ -1,25 +1,32 @@
 <html>
+
 <head>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
 </head>
+
 <body class="bodyClass">
     <div class="boxClass">
-        <input id="input1" class="usualInput"></input>
+        <input id="input1" class="usualInput generalClass"></input>
 
-        <select id="selectId" >
+        <select id="selectId" class="selectionClass generalClass">
             <option value="+" selected> + </option>
             <option value="-"> - </option>
-            <option value="*"> *  </option>
+            <option value="*"> * </option>
             <option value="/"> / </option>
         </select>
 
-        <input id="input2" class="usualInput"></input>
+        <input id="input2" class="usualInput generalClass"></input>
 
-        <button id="culcButton" class="culClassButton" onclick="Calc()"> подсчитать </button>
-        <p id="result1"></p>
-        <p id="result2"></p>
+        <button id="culcButton" class="culClassButton generalClass" onclick="Calc()"> подсчитать </button>
+
+        <div class="resultClass generalClass">
+            <p id="result1" class="result1Class"></p>
+            <p id="result2" class="result2Class"></p>
+        </div>
+
     </div>
 
 </body>
+
 </html>
