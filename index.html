@@ -7,22 +7,22 @@
 
 <body class="bodyClass">
     <div class="boxClass">
-        <input id="input1" class="usualInput generalClass"></input>
+        <input id="input1" type="number" oninput="CheckInput(1)" class="usualInput generalClass"></input>
 
-        <select id="selectId" class="selectionClass generalClass">
+        <select id="selectId" class="generalClass">
             <option value="+" selected> + </option>
             <option value="-"> - </option>
             <option value="*"> * </option>
             <option value="/"> / </option>
         </select>
 
-        <input id="input2" class="usualInput generalClass"></input>
+        <input id="input2" type="number" oninput="CheckInput(2)" class="usualInput generalClass"></input>
 
         <button id="culcButton" class="culClassButton generalClass" onclick="Calc()"> подсчитать </button>
 
         <div class="resultClass generalClass">
-            <p id="result1" class="result1Class"></p>
-            <p id="result2" class="result2Class"></p>
+            <p id="result1" class="result1Class sizeResultsClass"></p>
+            <p id="result2" class="result2Class sizeResultsClass"></p>
         </div>
 
     </div>

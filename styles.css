@@ -1,29 +1,9 @@
-.usualInput {
-    height: 30px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 190px;
-
-}
-
-.selectionClass {
-    height: 30px;
-    margin-top: 10px;
-    width: 65px;
-
-}
-
-.culClassButton {
-    height: 40px;
-    margin-top: 50px;
-    width: 160px;
-
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .generalClass {
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgba(240, 27, 27, 0.732);
     font-weight: bold;
@@ -35,35 +15,101 @@
     background-color: rgb(168, 237, 168);
 }
 
+.errorClass {
+    border: 3px;
+    border-color: red;
+    border-style: solid;
+}
+
 .boxClass {
-    width: 500px;
-    height: 310px;
+    padding: 10px;
     background-color: rgb(168, 237, 168);
     border-radius: 10px;
     text-align: center;
 }
 
+input {
+    outline: none;
+    height: 40px;
+}
+
+button {
+    height: 40px;
+    width: 160px;
+}
+
+select {
+    height: 40px;
+    width: 60px;
+    margin: 10px;
+}
+
 .resultClass {
     text-align: left;
-    margin-top: 50px;
-    margin-left: 13px;
-    width: 470px;
-    height: 90px;
-
+    margin-top: 40px;
 }
 
 .result1Class {
     opacity: 0.3;
-    margin-left: 10px;
 }
 
-.result2Class {
+@media (min-width:601px) {
 
-    margin-left: 10px;
+    .usualInput {
+        width: 200px;
+    }
+
+    .culClassButton {
+        margin-top: 30px;
+    }
+
+    .boxClass {
+        width: 500px;
+        height: 330px;
+    }
+
+    .resultClass {
+        margin-left: 10px;
+        width: 480px;
+        height: 150px;
+    }
+
+    .sizeResultsClass {
+        margin: 10px;
+        width: 475px;
+        height: 60px;
+    }
 }
 
-@media (max-width:700px) {
+@media (max-width:600px) {
     div>* {
+        margin: 0 auto;
         display: block;
+    }
+
+    .boxClass {
+        width: 330px;
+        height: 490px;
+    }
+
+    .usualInput {
+        width: 310px;
+        margin: 10px;
+    }
+
+    .culClassButton {
+        margin-top: 40px;
+    }
+
+    .resultClass {
+        margin-top: 50px;
+        width: 310px;
+        height: 200px;
+    }
+
+    .sizeResultsClass {
+        width: 290px;
+        margin: 10px;
+        height: 80px;
     }
 }
